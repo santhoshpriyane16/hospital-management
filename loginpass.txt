@@ -1,0 +1,21 @@
+ADMIN
+=====
+userid = 2022ADMIN123
+password = admin2022
+
+
+SUBADMIN
+========
+
+userid = 2022SUBADMIN123
+password = subadmin2022
+
+
+DOCTORS
+=======
+
+userid = 2022DOC0001
+password = 0001doc2022
+
+userid = 2022DOC0002
+password = 0002doc2022

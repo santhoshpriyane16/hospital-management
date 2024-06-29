@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{47AC392B-A4DE-4D4D-8C41-8FE374395ACE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>hospital_management_project</RootNamespace>
+    <AssemblyName>hospital_management_project</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adminaddstaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminaddstaff.Designer.cs">
+      <DependentUpon>Adminaddstaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminpanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminpanel.Designer.cs">
+      <DependentUpon>Adminpanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appointmentextendedviewtodoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appointmentextendedviewtodoctor.Designer.cs">
+      <DependentUpon>appointmentextendedviewtodoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appointmentsextendedviewtosa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appointmentsextendedviewtosa.Designer.cs">
+      <DependentUpon>appointmentsextendedviewtosa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appointmentsviewsa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appointmentsviewsa.Designer.cs">
+      <DependentUpon>appointmentsviewsa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointmentviewsbydoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointmentviewsbydoc.Designer.cs">
+      <DependentUpon>Appointmentviewsbydoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="compregistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="compregistration.Designer.cs">
+      <DependentUpon>compregistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="docprofiletosubadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="docprofiletosubadmin.Designer.cs">
+      <DependentUpon>docprofiletosubadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorpersonalprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorpersonalprofile.Designer.cs">
+      <DependentUpon>doctorpersonalprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctorspanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctorspanel.Designer.cs">
+      <DependentUpon>Doctorspanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctors_profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctors_profile.Designer.cs">
+      <DependentUpon>doctors_profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profile_updation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profile_updation.Designer.cs">
+      <DependentUpon>profile_updation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registrationform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrationform.Designer.cs">
+      <DependentUpon>Registrationform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="requisitionextviewtoadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="requisitionextviewtoadmin.Designer.cs">
+      <DependentUpon>requisitionextviewtoadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sabookappointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sabookappointment.Designer.cs">
+      <DependentUpon>Sabookappointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffprotosubadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffprotosubadmin.Designer.cs">
+      <DependentUpon>staffprotosubadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staff_profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff_profile.Designer.cs">
+      <DependentUpon>staff_profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subadmin.Designer.cs">
+      <DependentUpon>Subadmin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Adminaddstaff.resx">
+      <DependentUpon>Adminaddstaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminpanel.resx">
+      <DependentUpon>Adminpanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appointmentextendedviewtodoctor.resx">
+      <DependentUpon>appointmentextendedviewtodoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appointmentsextendedviewtosa.resx">
+      <DependentUpon>appointmentsextendedviewtosa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appointmentsviewsa.resx">
+      <DependentUpon>appointmentsviewsa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointmentviewsbydoc.resx">
+      <DependentUpon>Appointmentviewsbydoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="compregistration.resx">
+      <DependentUpon>compregistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="docprofiletosubadmin.resx">
+      <DependentUpon>docprofiletosubadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorpersonalprofile.resx">
+      <DependentUpon>doctorpersonalprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctorspanel.resx">
+      <DependentUpon>Doctorspanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctors_profile.resx">
+      <DependentUpon>doctors_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profile_updation.resx">
+      <DependentUpon>profile_updation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrationform.resx">
+      <DependentUpon>Registrationform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="requisitionextviewtoadmin.resx">
+      <DependentUpon>requisitionextviewtoadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sabookappointment.resx">
+      <DependentUpon>Sabookappointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffprotosubadmin.resx">
+      <DependentUpon>staffprotosubadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff_profile.resx">
+      <DependentUpon>staff_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subadmin.resx">
+      <DependentUpon>Subadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-tom-fisk-1692693.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-negative-space-48604.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-alex-green-5699456.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekg-heart-rate.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staffs.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-pixabay-40568.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-anna-shvets-3786166.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-rodnae-productions-6129114.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-rodnae-productions-6129207.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-cottonbro-studio-7579831.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Suraksha Hos.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
